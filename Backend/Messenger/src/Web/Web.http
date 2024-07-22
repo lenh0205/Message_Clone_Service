@@ -3,7 +3,7 @@
 
 @Email=administrator@localhost
 @Password=Administrator1!
-@BearerToken=<YourToken>
+# @BearerToken=<YourToken>
 
 # POST Users Register
 POST {{Web_HostAddress}}/api/Users/Register
