@@ -39,6 +39,7 @@ dotnet new ca-sln --client-framework Angular --output YourProjectName
 ```
 
 ![SPA with Angular](./images/860ba2a2-54f8-4e76-a3e9-41c401bee8c1.png)
+
 _Figure 1 . SPA with Angular_
 
 To create a SPA with React and ASP NET Core:
@@ -48,6 +49,7 @@ dotnet new ca-sln -cf React -o YourProjectName
 ```
 
 ![SPA with React](./images/2f8b210e-2112-4fd4-8265-1da2979a1149.png)
+
 _Figure 2. SPA with React_
 
 To create a ASP NET Core Web API-only solution:
@@ -56,6 +58,7 @@ To create a ASP NET Core Web API-only solution:
 dotnet new ca-sln -cf None -o YourProjectName
 ```
 ![Web api only](./images/1fb8e9a5-ff64-4215-a4de-1e95b9d7e7c8.png)
+
 _Figure 3. Web API only_
 
 Launch the app with:
@@ -91,7 +94,9 @@ To create a new command:
 ```
 dotnet new ca-usecase --name CreateTodoList --feature-name TodoLists --usecase-type command --return-type int
 ```
-Figure 5. Command usecase
+![Command usecase](./images/d56c6871-d1ca-4b7b-b233-043f3b2cd181.png)
+
+_Figure 5. Command usecase_
 
 To create a query:
 
@@ -103,7 +108,9 @@ To learn more, run the following command:
 ```
 dotnet new ca-usecase --help
 ```
-Figure 6. ca-usecase –help
+![ca-usecase --help](./images/a6dbaf79-4397-4eda-bf58-69af655bb294.png)
+
+_Figure 6. ca-usecase –help_
 
 # Database
 
