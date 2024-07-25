@@ -1,22 +1,13 @@
-import { useEffect } from "react"
-import { defaultAxiosInstance } from "../../libs/axios/instance";
 
 const Messenger = () => {
-  useEffect(() => {
-    console.log("useEffect")
-    const fetchData = async () => {
-      try {
-        const res = await defaultAxiosInstance.get("users");
-        alert(JSON.stringify(res));
-      }
-      catch {
-        alert("Error Error");
-      }
-    }
-    fetchData();
-  }, [])
+  const { email, password } = JSON.parse(localStorage.getItem("userInfo") ?? "''");
   return (
-    <div>Messenger</div>
+    <>
+      <div>Messenger Page</div>
+      <span><b>Email:</b>{email}</span>
+      <br/>
+      <span><b>Password:</b>{password} (mà sao phải show password vậy :D)</span> 
+    </>
   )
 }
 
