@@ -13,7 +13,6 @@ const SignUp = () => {
 		navigate("/messenger");
 	};
 
-	const cardWidth = 1100;
 	return (
 		<section>
 			<div
