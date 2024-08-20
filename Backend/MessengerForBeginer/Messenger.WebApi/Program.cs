@@ -1,3 +1,6 @@
+using Messenger.Application;
+using Messenger.Infrastructure;
+using Messenger.WebApi;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -5,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddApplicationServices();
+builder.Services.AddInfrastructureServices(builder.Configuration);
+builder.Services.AddWebApiServices();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
