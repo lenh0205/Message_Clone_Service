@@ -1,8 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>Messenger.Domain.UnitTests</RootNamespace>
-    <AssemblyName>Messenger.Domain.UnitTests</AssemblyName>
+    <RootNamespace>Domain.UnitTests</RootNamespace>
+    <AssemblyName>Domain.UnitTests</AssemblyName>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
   </PropertyGroup>

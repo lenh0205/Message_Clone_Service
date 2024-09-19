@@ -3,7 +3,12 @@
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion  Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+    <PackageVersion Include="MediatR" Version="12.4.1" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.8" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8" />
+    <PackageVersion Include="Swashbuckle.AspNetCore" Version="6.7.3" />
     <PackageVersion Include="coverlet.collector" Version="6.0.0" />
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
     <PackageVersion Include="NUnit" Version="3.14.0" />
