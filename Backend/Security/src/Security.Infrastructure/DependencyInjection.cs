@@ -1,8 +1,9 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Security.Infrastructure {
-    public class DependencyInjection {
-        public IServiceCollection AddInfrastructureServices(IServiceCollection services) {
+    public static class DependencyInjection {
+        public static IServiceCollection AddInfrastructureServices(this IServiceCollection services, IConfiguration configuration) {
 
 
             return services;
