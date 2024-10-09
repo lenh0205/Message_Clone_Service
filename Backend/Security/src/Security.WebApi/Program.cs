@@ -13,9 +13,10 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment()) {
+    app.Map("/", () => Results.Redirect("/swagger"));
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+} 
 
 app.UseHttpsRedirection();
 

@@ -22,4 +22,8 @@
     <ProjectReference Include="..\Security.Domain\Security.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>
