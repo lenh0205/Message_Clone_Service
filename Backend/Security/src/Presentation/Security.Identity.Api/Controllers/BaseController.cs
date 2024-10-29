@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Security.WebApi.Controllers;
+namespace Security.Identity.Api.Controllers;
 
 [ApiController]
 public class BaseController : ControllerBase {

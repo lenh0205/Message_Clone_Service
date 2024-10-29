@@ -1,15 +1,13 @@
 using Security.Application;
 using Security.Infrastructure;
-using Security.Persistence;
-using Security.WebApi;
+using Security.Identity.Api;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddApplicationDependencies();
-builder.Services.AddInfrastructureDependencies(builder.Configuration);
-builder.Services.AddPersistenceDependencies(builder.Configuration);
-builder.Services.AddPresentationDependencies();
+builder.Services.AddApplicationServices();
+builder.Services.AddInfrastructureServices(builder.Configuration);
+builder.Services.AddWebServices();
 
 var app = builder.Build();
 
@@ -18,7 +16,7 @@ if (app.Environment.IsDevelopment()) {
     app.Map("/", () => Results.Redirect("/swagger"));
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+} 
 
 app.UseHttpsRedirection();
 

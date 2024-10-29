@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Reflection;
+using Microsoft.EntityFrameworkCore;
 using Security.Application.Common.Interfaces;
-using System.Reflection;
 
-namespace Security.Infrastructure.Data {
+namespace Security.Persistence.Data {
     public class ApplicationDbContext : DbContext, IApplicationDbContext {
         public ApplicationDbContext(DbContextOptions options) : base(options) {
         }

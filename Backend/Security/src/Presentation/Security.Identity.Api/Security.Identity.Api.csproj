@@ -4,8 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Security.WebApi</RootNamespace>
-    <AssemblyName>Security.WebApi</AssemblyName>
+    <PackageId>Security.Identity.Api</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,9 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Security.Persistence\Security.Persistence.csproj" />
-    <ProjectReference Include="..\Security.Application\Security.Application.csproj" />
-    <ProjectReference Include="..\Security.Infrastructure\Security.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Core\Security.Application\Security.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Security.Infrastructure\Security.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

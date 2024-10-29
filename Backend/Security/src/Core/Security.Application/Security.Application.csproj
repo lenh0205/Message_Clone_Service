@@ -19,11 +19,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Security.Domain\Security.Domain.csproj" />
+    <Folder Include="NewFolder\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="NewFolder\" />
+    <ProjectReference Include="..\Security.Domain\Security.Domain.csproj" />
   </ItemGroup>
 
 </Project>

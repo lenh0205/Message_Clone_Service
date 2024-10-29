@@ -1,4 +1,4 @@
-﻿namespace Security.WebApi {
+﻿namespace Security.Identity.Api {
     public static class DependencyInjection {
         public static IServiceCollection AddPresentationDependencies(this IServiceCollection services) {
             services.AddControllers();
