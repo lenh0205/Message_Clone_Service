@@ -8,4 +8,10 @@
     <AssemblyName>Security.Domain</AssemblyName>
 </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
 </Project>
