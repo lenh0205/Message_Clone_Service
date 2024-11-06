@@ -6,9 +6,7 @@ namespace Security.Persistence.Data {
     public class ApplicationDbContext : DbContext, IApplicationDbContext {
         public ApplicationDbContext(DbContextOptions options) : base(options) {
         }
-        protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder) {
-            base.ConfigureConventions(configurationBuilder);
-        }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             base.OnConfiguring(optionsBuilder);
             if (!optionsBuilder.IsConfigured) {
